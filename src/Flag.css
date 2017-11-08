@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-color: rgb(249, 249, 249);
 }
 
 .flag {
     margin-top: 1rem;
-    border-radius: 2rem;
-    max-width: 40vw;
+    border-radius: 1rem;
+    max-width: 60vw;
     box-shadow: -1px 10px 18px -8px rgba(92, 92, 176, 0.71);
     margin-bottom: 1rem;
 }

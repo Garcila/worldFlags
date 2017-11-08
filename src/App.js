@@ -7,6 +7,7 @@ import './App.css';
 import Nav from './Nav';
 import Flag from './Flag';
 import Correct from './Correct';
+import Incorrect from './Incorrect';
 import ChoicesForm from './ChoicesForm';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
       choices: [],
       chosen: '',
       correct: false,
+      incorrect: false,
       countries: []
     };
 
@@ -54,7 +56,9 @@ class App extends Component {
 
   handleClick(country) {
     if (country.name === this.state.chosen.name) {
-      this.setState({correct: true})
+      this.setState({correct: true, incorrect: false})
+    } else {
+      this.setState({incorrect: true})
     }
   }
 
@@ -66,10 +70,12 @@ class App extends Component {
 
   render() {
     const correct = this.state.correct ? <Correct info={this.state.chosen} reset={this.reset}/> : '';
+    const incorrect = this.state.incorrect ? <Incorrect /> : '';
     return (
       <div className="App">
         <Nav title="World Flags" />
         {correct}
+        {incorrect}
         <ChoicesForm
           choices={this.state.choices}
           handleClick={this.handleClick}

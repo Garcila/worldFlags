@@ -9,10 +9,10 @@ const Correct = ({ info, reset }) => {
       <p>
         {info.name} is in {info.subregion}, {info.region}
       </p>
-      <button onClick={reset}>Play Again</button>
       <div id="map">
         <WorldMap info={info} />
       </div>
+      <button onClick={reset}>Play Again</button>
     </div>
   );
 };

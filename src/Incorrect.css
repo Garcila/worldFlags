@@ -1,0 +1,7 @@
+.incorrect {
+    background-color: rgba(255, 1, 1, 0.534);
+    border: 1px solid red;
+    padding: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+}
