@@ -1,0 +1,13 @@
+.flag-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flag {
+    margin-top: 1rem;
+    border-radius: 2rem;
+    max-width: 40vw;
+    box-shadow: -1px 10px 18px -8px rgba(92, 92, 176, 0.71);
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,29 @@
+.countries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.country {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0.5rem;
+    min-width: 5rem;
+    max-width: 6rem;
+    border: 0.1rem solid rgb(76, 76, 132);
+    padding: 1rem 0.5rem;
+    color: white;
+    background-color: rgb(117, 115, 145);
+    font-weight: bold;
+    transition: background-color 0.4s, color 0.6s;
+}
+
+.country:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(38, 38, 103);
+}
